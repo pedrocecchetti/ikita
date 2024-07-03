@@ -28,3 +28,4 @@ include = ["I"]
 
 [tool.ruff.format]
 quote-style = "single"
+exclude = ["**/migrations/**"]
