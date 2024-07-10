@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <div
+  class="relative  bg-cover bg-no-repeat p-12 text-center"
+  style="background-image: url({% static 'img/homepage.jpg' %}); height: 500px">
+  <div
+    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+    style="background-color: rgba(0, 0, 0, 0.6)">
+    <div class="flex h-full items-center justify-center">
+      <div class="text-white">
+        <h2 class="mb-4 text-4xl font-semibold">Welcome to iKita</h2>
+        <h4 class="mb-6 text-xl font-semibold">The solution for communication and admnistration</h4>
+        <button
+          type="button"
+          class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+          data-twe-ripple-init
+          data-twe-ripple-color="light">
+          Ask for a demonstration
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+    <div class="grid grid-cols-2 grid-rows-1 md:grid-cols-3 pt-6 mb-6">
+        <div
+          class="block w-5/6 rounded-lg bg-white dark:bg-surface-dark dark:text-white text-surface m-auto shadow-lg text-center">
+          <div class="p-6">
+            <h5
+              class="mb-2 m-auto text-xl w-5/6 font-medium leading-tight text-center">
+              The solution for internal Admnistration
+            </h5>
+            <p class="m-auto w-5/6  text-center">
+             With our platform all the organizational aspects of your kindergarten are covered.
+            </p>
+            <div class="m-auto">
+                <i class="fa-solid fa-toolbox fa-5x pt-5 m-auto "></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="block w-5/6 rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface m-auto shadow-lg text-center
+          ">
+          <div class="p-6">
+            <h5
+              class="mb-2 m-auto text-xl w-5/6  font-medium leading-tight text-center">
+              Also a good way of having parents informed
+            </h5>
+            <p class="m-auto w-5/6 text-center text-base">
+              With the parents section, your parents can also have access to communications events and more.
+            </p>
+            <div class="m-auto">
+                <i class="fa-solid fa-user fa-4x pt-5 m-auto "></i>
+            </div>
+
+
+        </div>
+
+      </div>
+</section>
+{% endblock %}
