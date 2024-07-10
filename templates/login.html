@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{%block content %}
+<div class="m-auto mt-5 p-7 w-4/12 shadow-md bg-slate-500 rounded-md text-slate-200">
+    <form action="{% url 'login' %}" method="POST">{% csrf_token %}
+        <h1 class="text-xl text-right">Credentials</h1>
+        <label class="m-auto block pt-4" for="password">Email:</label>
+        <input class="ml-12 rounded-md w-4/6 block text-slate-700" type="text" name="email" value="{{email}}">
+        <label class="m-auto block pt-4" for="password">Password:</label>
+        <input class="ml-12 rounded-md w-4/6 block text-slate-700" type="password" name="password" value="{{password}}">
+
+        <input class="ml block mt-4 bg-green-500 text-slate-200 rounded-md w-2/6 p-2"
+        type="submit" value="login">
+    </form>
+
+</div>
+
+{% endblock %}
